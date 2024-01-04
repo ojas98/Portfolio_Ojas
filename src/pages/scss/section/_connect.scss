@@ -1,0 +1,221 @@
+.contact {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    .title {
+      font-family: var(--LeagueSpartan);
+      color: var(--lightest-slate);
+      position: relative;
+  
+      h2 {
+        margin-bottom: 5rem;
+        font-size: var(--tx2large);
+        font-weight: 700;
+  
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 20px;
+          width: 300px;
+          height: 2px;
+          margin-left: 200px;
+          background-color: var(--light-slate);
+        }
+      }
+    }
+    
+  .contact-box {
+    font-family: var(--LeagueSpartan);
+    position: relative;
+    top: -70px;
+    background-color: var(--light-slate); /* Set your desired background color */
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 8px;
+   
+    width: 40%;; /* Set the width of the box on the left as desired */
+    }
+
+    .lottie-animation{
+        position: relative;
+      width: 200px;
+      height: 200px;
+      left: 120px;
+       }
+
+ .form-container {
+    position: relative; 
+    top: -400px;
+    left: 100%;
+    transform: translate(-100%);
+    display: flex;
+    width: 400px;
+ background: linear-gradient(#000000, #000000) padding-box,
+              linear-gradient(145deg, transparent 20%,#ffffff, #8001ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  font-family: var(--LeagueSpartan);
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    button:active {
+      scale: 0.95;
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+  
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: var(--slate);
+          font-weight: 600;
+          font-size: 12px;
+        }
+  
+        input {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 8px;
+          color: #fffbfb;
+          font-family: inherit;
+          background-color: transparent;
+          border: 1px solid  var(--light-slate);
+  
+          &::placeholder {
+            opacity: 0.5;
+          }
+  
+          &:focus {
+            outline: none;
+            border-color: #7d0dce;
+          }
+        }
+  
+        textarea {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 8px;
+          resize: none;
+          color: #fff;
+          height: 96px;
+          border: 1px solid var(--light-slate);
+          background-color: transparent;
+          font-family: inherit;
+  
+          &::placeholder {
+            opacity: 0.5;
+          }
+  
+          &:focus {
+            outline: none;
+            border-color: #7d0dce;
+          }
+        }
+      }
+  
+      .form-submit-btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+        font-family: inherit;
+        color: #000000;
+        font-weight: 600;
+        width: 40%;
+        background: var(--light-slate2);
+        border: 1px solid var(--light-slate);
+        padding: 12px 16px;
+        font-size: inherit;
+        gap: 8px;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 6px;
+  
+        &:hover {
+          background-color: var(--light-slate)
+         
+        }
+      }
+    }
+
+    
+  }
+
+ 
+  
+@media screen and (max-width: 968px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+    .form-container {
+        left: 50%;
+        margin-top: 180px; 
+    transform: translate(-50%);
+    }
+
+  
+   .lottie-animation{
+    position: relative;
+    top:-250px;
+    left:300px;
+   
+   }
+
+}
+
+  @media screen and (max-width: 600px) {
+    .title {
+      h2 {
+        &::after {
+            width: 100px;
+        }
+      }
+    }
+    .form-container {
+        left: 50%;
+        margin-top: 270px; 
+    transform: translate(-50%);
+    }
+    .lottie-animation{
+      position: relative;
+      top:-250px;
+      left:200px;
+     
+     }
+   
+  }
+
+
+  
+}

@@ -1,0 +1,338 @@
+.projects {
+  margin: 10rem 0;
+  .title {
+    font-family: var(--LeagueSpartan);
+    color: var(--lightest-slate);
+    position: relative;
+
+    h2 {
+      margin-bottom: 3rem;
+      font-size: var(--tx2large);
+      font-weight: 700;
+      
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 2px;
+        margin-left: 320px;
+        background-color: var(--light-slate);
+      }
+    }
+    /* Center-align the category buttons */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5rem;
+  background-color: var(--light-slate2);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  margin: 0 auto 2rem; /* Add margin to separate from projects */
+
+}
+
+.category-buttons .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.category-buttons .radio input {
+  display: none;
+}
+
+.category-buttons .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgb(0, 0, 0);
+  transition: all 0.15s ease-in-out;
+}
+
+.category-buttons .radio input:checked + .name {
+  background-color: var(--light-slate2);
+  font-weight: 600;
+}
+
+  
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    .project {
+      position: relative;
+      display: flex;
+      justify-content:end;
+      &-image {
+        &-container {
+          position: relative;
+          width: 500px;
+          height: 300px;
+        }
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        &:hover {
+          .project-image-overlay {
+            background-color: #00000000;
+          }
+          img {
+            filter: none;
+          }
+        }
+        &-overlay {
+          transition: 0.3s ease-in-out;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #4411c45e;
+        }
+        img {
+          z-index: 0;
+          filter: grayscale(100%);
+          transition: 0.3s ease-in-out;
+        }
+      }
+      &-info {
+        z-index: 5;
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+        &-overline {
+          color: var(--theme-color);
+          font-family: var(--LeagueSpartan);
+        }
+        &-title {
+          width: max-content;
+          color: var(--lightest-slate);
+          font-size: var(--txlarge);
+          font-family: var(--LeagueSpartan);
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: var(--theme-color);
+          }
+        }
+        &-description {
+          background-color: var(--lightest-slate);
+          border-radius: 1rem;
+          p {
+            color: var(--light-slate);
+            font-family: var(--LeagueSpartan);
+            padding: 1rem;
+            text-align: end;
+          }
+        }
+        &-tech-list {
+          display: flex;
+          list-style-type: none;
+          gap: 1rem;
+          flex-wrap: wrap;
+          &-item {
+            color: var(--slate);
+            font-family: var(--LeagueSpartan);
+          }
+        }
+        &-links {
+          font-size: var(--tlarge2);
+          list-style-type: none;
+          display: flex;
+          gap: 1rem;
+          &-item {
+            transition: 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-link {
+              padding: 10px;
+              color: var(--lightest-slate);
+              transition: 0.3s ease-in-out;
+              outline: 2px dashed transparent;
+              &:hover {
+                color:  var(--slate);
+              }
+              &:focus {
+                transform: translateY(-4px);
+                color:  var(--slate);
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        justify-content: flex-start;
+        .project-image {
+          right: 0;
+          left: initial;
+        }
+        .project-info {
+          align-items: flex-start;
+          &-description {
+            p {
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+    .load-more-button {
+      text-align: center; /* Center-align content horizontally */
+      display: flex;
+      justify-content: center; /* Center-align content vertically */
+      button {
+        font-family: var(--LeagueSpartan);
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: var(--light-slate2);
+        border-radius: 30px;
+        font-weight: 600;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        transition-duration: .2s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+        transition-duration: .5s;
+         
+          }
+          
+          .svgIcon {
+            height: 25px;
+            transition-duration: 1.5s;
+          }
+          
+          .bell path {
+            fill: rgb(19, 19, 19);
+          }
+          
+          .button:hover {
+            background-color: var(--light-slate);
+            transition-duration: .5s;
+          }
+          
+          .button:active {
+            transform: scale(0.97);
+            transition-duration: .2s;
+          }
+          
+          .button:hover .svgIcon {
+            transform: rotate(250deg);
+            transition-duration: 1.5s;
+          }
+          
+    }
+    .construction-message {
+      text-align: center; /* Center-align the contents horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-align the contents vertically */
+      font-family: var(--LeagueSpartan);
+    }
+    
+    .construction-message p {
+      /* Style for the "Projects are under Construction" message */
+      color: your-color; /* Add the desired text color */
+      font-size: your-font-size; /* Add the desired font size */
+      /* Add any other styles you want */
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    &-container {
+      align-items: center;
+     gap: 5rem;
+      .project {
+        justify-content: flex-start;
+        .project-info {
+          width: 500px;
+          height: 300px;
+          background-color: rgba(31, 10, 44, 0.592);
+          align-items: flex-start;
+          padding: 1rem;
+
+          &-description {
+            background-color: transparent;
+            p {
+              padding: 0;
+              text-align: start;
+            }
+          }
+        }
+        &:nth-of-type(even) {
+          .project-image {
+            left: 0;
+            right: initial;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 680px) {
+    margin: 5rem 0;
+    &-container {
+      
+      .project {
+        &-image {
+          &-container {
+            width: 500px;
+            height: 300px;
+          }
+        }
+        .project-info {
+          width: 500px;
+          height: 300px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &-container {
+     
+      .project {
+        &-image {
+          &-container {
+            width: 350px;
+            height: 200px;
+          }
+        }
+        .project-info {
+          width: 350px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 968px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .title {
+      h2 {
+        &::after {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

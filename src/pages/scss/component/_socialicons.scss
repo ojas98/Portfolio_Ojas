@@ -1,0 +1,86 @@
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 3rem;
+  z-index: 30;
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    &-item {
+      font-size: var(--tlarge2);
+      transition: 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-link {
+        padding: 5px;
+        color: var(--lightest-slate);
+        transition: 0.3s ease-in-out;
+        outline: 2px dashed transparent;
+
+        &:hover {
+          color: var(--theme-color);
+        }
+
+        &:focus {
+          transform: translateY(-4px);
+        }
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--light-slate);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1021px) {
+    display: none;
+  }
+}
+
+.social-icons.responsive {
+  position: absolute;
+  top: auto; 
+  left: auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+
+  .social-icons-list {
+    flex-direction: row; 
+    justify-content: center;
+  }
+
+  .social-icons-item {
+    &:last-child {
+      margin-bottom: 0; 
+    }
+  }
+}
+
+
+
+

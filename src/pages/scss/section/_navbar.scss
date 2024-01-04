@@ -1,0 +1,153 @@
+nav {
+  min-height: 60px;
+  .wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding:  0 1rem ;
+          transition: 0.3s ease-in-out;
+          position: relative;
+          .brand {
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 2.5rem;
+              width: 3.5rem;
+              fill: none;
+              margin:1.5rem;
+              cursor: pointer;
+              outline: 2px dashed transparent;
+              transition: 0.3s ease-in-out;
+        &:hover {
+          fill: #64fad91a;
+        }
+        &:focus {
+          outline-color: var(--lightest-slate);
+          fill: #64fad91a;
+        }
+        .logo-container {
+                    transition: transform 0.5s;
+                  }
+                  
+                  .logo-container.flipped {
+                    transform: rotateY(180deg);
+                  }
+      }
+    }
+    .nav-responsive-toggle {
+      display: none;
+      color: var(--lightest-slate);
+      font-size: var(--tlarge2);
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease-in-out;
+      z-index: 15;
+      
+    }
+    
+    .nav-items {
+            position: relative;
+              display: flex;
+              gap: 1em;
+              color: var(--lightest-slate);
+              font-family: var(--LeagueSpartan);
+              font-weight: 600;
+              font-size: var(--tlarge);
+              counter-reset: nav-list;
+              &-list {
+                display: flex;
+                gap: 1.5rem;
+                margin-right: 1rem;
+                margin-top: 1rem;
+                list-style-type: none;
+                &-item {
+                  a {
+                    position: relative;
+                    outline: 2px dashed transparent;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: 0.3s ease-in-out;
+                  }
+                  a::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 4px;
+                    background-color: #000000;
+                    bottom: 0;
+                    left: 0;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform .3s ease-in-out;
+                  }
+                  a:hover::before {
+                                transform-origin: left;
+                                transform: scaleX(1);
+                              }
+                                & :hover {
+                                
+                                  color: var(--lightest-slate);
+                                }
+        }
+        
+      }
+    }
+  
+    @media screen and (max-width: 1020px) {
+      padding: 0 2rem;
+      .nav-responsive-toggle {
+        display: flex;
+        z-index: 15;
+      }
+
+      .nav-items {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 0%;
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        padding: 50px 10px;
+        background-color: var(--light-slate);
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        transition: 0.3s ease-in-out;
+        z-index: 10;
+        &-list {
+          
+          flex-direction: column;
+        }
+        
+      }
+
+      .nav-responsive {
+        width: min(75vw, 400px);
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    
+  }
+  .blur-nav {
+    height: 60;
+    position: fixed;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    background-color: rgba(210, 124, 223, 0.352);
+    box-shadow: 0 10px 30px -10px var(--lightest-slate);
+    
+      backdrop-filter: blur(10px);
+
+  }
+ 
+  
+  
+}
+

@@ -1,0 +1,41 @@
+.hero {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: flex-start;
+    gap: 1.5rem;
+    justify-content: center;
+    min-height: 10vh;
+
+    &-title {
+      color: var(--lightest-slate);
+      font-size: var(--tlarge);
+      font-family: var(--LeagueSpartan);
+    }
+    &-title-large {
+      font-size: var(--tgiant);
+      font-family: var(--LeagueSpartan);
+      color: var(--lightest-slate);
+    }
+    &-title-sub {
+      color: var(--lightest-slate);
+    }
+    &-text {
+      color: var(--slate);
+      margin-right: 20%;
+      font-size: var(--tlarge);
+      text-align: justify;
+      letter-spacing: 0.02rem;
+      line-height: 1.6rem;
+      font-weight: 500;
+      font-family: var(--LeagueSpartan);
+    }
+   
+    
+    @media screen and (max-width: 768px) {
+      &-text {
+        width: 90%;
+      }
+    }
+  }
