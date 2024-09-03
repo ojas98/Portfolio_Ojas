@@ -83,7 +83,7 @@ function Hero() {
           duration: 0.3,
           ease: "easeInOut",
           delay: 1.35,
-        }}>With a strong background in data analysis, product management, and business analysis, I specialize in transforming data into strategic insights and driving product success. I’m currently seeking new opportunities to leverage my skills in a dynamic role where I can make an impact.
+        }}>With a strong background in  product management, data analysis, product development and business analysis, I specialize in transforming data into strategic insights and driving product success. I’m currently seeking new opportunities to leverage my skills in a dynamic role where I can make an impact.
         <br></br> 
         <br></br> 
         Explore how I can contribute to your team and drive success through data-driven strategies and innovative solutions. </motion.p>

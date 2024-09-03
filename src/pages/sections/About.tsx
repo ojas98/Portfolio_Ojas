@@ -94,8 +94,10 @@ const renderContent = (): ReactNode => {
   <br />
   <br />
   {`I'm Ojas Balsotra, a versatile professional with 4 years of experience spanning front-end development, product management, data analysis, and business analysis.
-  In my career, I've spent over 2 years crafting engaging web solutions as a front-end developer and have driven projects to success in product management. My data analysis experience includes creating insightful dashboards and deriving actionable insights for BYJUS and WhiteHat Jr. Additionally, I've been involved in requirement gathering, a key aspect of business analysis.
-  I’m currently exploring new opportunities where I can leverage my diverse skill set to drive innovation and deliver impactful results. Let’s connect to discuss how I can contribute to your team and help achieve your goals.`}
+  In my career, I've spent over 2 years crafting engaging web applications as a front-end developer and have driven projects to success in product management. My data analysis experience includes creating insightful dashboards and deriving actionable insights for BYJUS and WhiteHat Jr. Additionally, I've been involved in requirement gathering, a key aspect of business analysis and taking care of end to end lifecycle of a project.`}
+    <br />
+    <br />
+  {`I’m currently exploring new opportunities where I can leverage my diverse skill set to drive innovation and deliver impactful results. Let’s connect to discuss how I can contribute to your team and help achieve your goals.`}
 </p>
 
           {/* <p className="about-grid-info-text">
