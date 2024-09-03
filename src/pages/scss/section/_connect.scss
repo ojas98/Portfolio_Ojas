@@ -1,6 +1,6 @@
 .contact {
     margin-top: 5rem;
-    margin-bottom: 0rem;
+    
     .title {
       font-family: var(--LeagueSpartan);
       color: var(--lightest-slate);
@@ -216,8 +216,34 @@
     }
     .lottie-animation{
       position: relative;
-      top:-350px;
-      left:350px;
+      top:-390px;
+      left:250px;
+     
+     }
+   
+  }
+
+  @media screen and (max-width: 545px) {
+    .title {
+      h2 {
+        &::after {
+            width: 150px;
+        }
+      }
+    }
+    .contact-box{
+      position: relative;
+      left: -70px;
+    }
+    .form-container {
+        left: 50%;
+        margin-top: 100px; 
+    transform: translate(-50%);
+    }
+    .lottie-animation{
+      position: relative;
+      top:-390px;
+      left:150px;
      
      }
    

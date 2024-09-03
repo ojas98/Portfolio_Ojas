@@ -20,15 +20,15 @@ const renderContent = (): ReactNode => {
     case 'Skills':
       return (
         <div>
-          <p>➼ Programming languages :- Python, Javascript, Typescript.</p>
+          <p>➼ Programming languages :- Python, Typescript.</p>
           <br/>
           <p>➼ Web Development :- HTML, CSS.</p>
           <br/>
-          <p>➼ Framework & Libraries :- Next JS, React, Seaborn, Matplotlib, Plotly. </p>
+          <p>➼ Framework & Libraries :- Next, React, Seaborn, Matplotlib, Plotly. </p>
           <br/>
           <p>➼ DataBase Management :- SQL.</p>
           <br/>
-          <p>➼ Data analysis and visualization:- Tableau, Microsoft Excel.</p>
+          <p>➼ Data analysis and visualization:- Tableau, Microsoft Excel, Power BI </p>
           <br/>
         </div>
       );
@@ -36,29 +36,35 @@ const renderContent = (): ReactNode => {
       return (
         <div>
           <p>
-            <span style={{ fontSize: 'x-large' }}>➼ Masters of Science, Data Science.</span>
+            <span style={{ fontSize: 'large' }}>➼ Masters of Science</span>
             <br />
-            <span style={{ fontSize: 'medium' }}>{`Liverpool John Moore's University.`}</span>
+            <span style={{ fontSize: 'medium' }}>{`Liverpool John Moore's University,United Kingdom.`}</span>
+            <br />
+            <br />
           </p>
           <p>
-            <span style={{ fontSize: 'x-large' }}>➼ Executive Post Graduate Program.</span>
+            <span style={{ fontSize: 'large' }}>➼ Executive Post Graduate Program.</span>
             <br />
-            <span style={{ fontSize: 'medium' }}> International Institute of Information Technology, Bangalore.</span>
+            <span style={{ fontSize: 'medium' }}> {`International Institute of Information Technology, Bangalore.`} </span>
+            <br />
+            <br />
           </p>
           <p>
-            <span style={{ fontSize: 'x-large' }}>➼Bachelors of Engineering (EXTC)</span>
+            <span style={{ fontSize: 'large' }}>➼Bachelors of Engineering</span>
             <br />
-            <span style={{ fontSize: 'medium' }}>{`MGM's College of Engineering & Technology, Mumbai University.`}</span>
+            <span style={{ fontSize: 'medium' }}>{`MGM's College of Engineering & Technology, Mumbai.`}</span>
+            <br />
+            <br />
           </p>
         </div>
       );
-    // case 'Certification':
-    //   return (
-    //     <div>
-    //       <p>This is the Skills section content 3.
-    //       </p>
-    //     </div>
-    //   );
+    case 'Certification':
+      return (
+        <div>
+          <p>Actively pursuing certifications in my known skills to further enhance my expertise.
+          </p>
+        </div>
+      );
     default:
 
       return null;
@@ -125,15 +131,15 @@ const renderContent = (): ReactNode => {
     />
     <span className="name">Education</span>
   </label>
-  {/* <label className="radio">
+  <label className="radio">
     <input
       type="radio"
       name="section"
       checked={selectedSection === 'Certification'}
       onChange={() => handleSectionChange('Certification')}
     />
-    <span className="name">Certification</span>
-  </label> */}
+    <span className="name">Certifications</span>
+  </label>
 </div>
 
  <div>{renderContent()}</div>
