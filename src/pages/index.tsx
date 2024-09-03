@@ -26,6 +26,7 @@ function Index() {
     setShowContent(true);
   };
 
+
   return (
     <div className={`app ${responsiveNavVisible ? 'blur-active' : ''}`}>
       {isLoading ? (
