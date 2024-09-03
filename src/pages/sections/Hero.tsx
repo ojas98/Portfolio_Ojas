@@ -3,7 +3,8 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 function Hero() {
-    const phrases = ["Development.", "Data Science.", ""];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const phrases = ["Development.", "Analysis.","Management.", ""];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentPhrase, setCurrentPhrase] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +33,7 @@ function Hero() {
     return () => {
       clearInterval(interval);
     };
-  }, [currentPhraseIndex, currentIndex, isTyping]);
+  }, [currentPhraseIndex, currentIndex, isTyping, phrases]);
 
   // CSS class for the cursor
   const cursorClass = isTyping ? "cursor blink" : "cursor";
@@ -72,7 +73,7 @@ function Hero() {
           delay: 1.05,
         }}
       >
-    Versatile with expertise in {currentPhrase}
+    Versatile with expertise in Product {currentPhrase}
     </motion.h3>
     <motion.p
         className="hero-text"
@@ -82,10 +83,10 @@ function Hero() {
           duration: 0.3,
           ease: "easeInOut",
           delay: 1.35,
-        }}>My enthusiasm lies in conceiving and constructing groundbreaking solutions.
-      Presently, my primary focus revolves around crafting inclusive and captivating educational experiences within the realm of <Link href="https://byjus.com/us/math/" target="_blank" className="link">
-          BYJUS
-        </Link>. Explore my work and projects to discover how i bring tech to life and craft engaging digital experiences. </motion.p>
+        }}>With a strong background in data analysis, product management, and business analysis, I specialize in transforming data into strategic insights and driving product success. I’m currently seeking new opportunities to leverage my skills in a dynamic role where I can make an impact.
+        <br></br> 
+        <br></br> 
+        Explore how I can contribute to your team and drive success through data-driven strategies and innovative solutions. </motion.p>
        
     </div>
     

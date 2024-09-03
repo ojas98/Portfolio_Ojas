@@ -24,7 +24,7 @@
         outline: 2px dashed transparent;
 
         &:hover {
-          color: var(--theme-color);
+          color: var(--lightest-slate);
         }
 
         &:focus {
@@ -34,6 +34,7 @@
 
       &:hover {
         transform: translateY(-10px);
+      
       }
 
       &:last-child {
@@ -54,9 +55,13 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-
-  @media screen and (max-width: 1021px) {
+  
+  @media screen and (max-width: 1024px) {
     display: none;
+    margin-bottom: 3rem;
+    .social-icons-list::after {
+      display: none;
+    }
   }
 }
 

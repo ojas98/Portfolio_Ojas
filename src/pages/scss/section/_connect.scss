@@ -45,13 +45,13 @@
  .form-container {
     position: relative; 
     top: -400px;
-    left: 100%;
+    left: 90%;
     transform: translate(-100%);
     display: flex;
     width: 400px;
  background: linear-gradient(#000000, #000000) padding-box,
-              linear-gradient(145deg, transparent 20%,#ffffff, #8001ff) border-box;
-  border: 2px solid transparent;
+              linear-gradient(145deg, transparent 40%,#ffffff, #f5b060) border-box;
+  border: 3px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
@@ -114,7 +114,7 @@
   
           &:focus {
             outline: none;
-            border-color: #7d0dce;
+            border-color: #ebb876;
           }
         }
   
@@ -135,7 +135,7 @@
   
           &:focus {
             outline: none;
-            border-color: #7d0dce;
+            border-color: #ebb876;
           }
         }
       }
@@ -170,11 +170,12 @@
 
  
   
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1024px) {
     .title {
       h2 {
         &::after {
-          width: 100px;
+          width: 150px;
+          
         }
       }
     }
@@ -182,35 +183,41 @@
         left: 50%;
         margin-top: 180px; 
     transform: translate(-50%);
+
+    
     }
 
-  
+   .contact-box{
+    margin: 5rem;
+    
+   }
+
    .lottie-animation{
     position: relative;
-    top:-250px;
-    left:300px;
+    top:-325px;
+    left:450px;
    
    }
 
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .title {
       h2 {
         &::after {
-            width: 100px;
+            width: 150px;
         }
       }
     }
     .form-container {
         left: 50%;
-        margin-top: 270px; 
+        margin-top: 100px; 
     transform: translate(-50%);
     }
     .lottie-animation{
       position: relative;
-      top:-250px;
-      left:200px;
+      top:-350px;
+      left:350px;
      
      }
    

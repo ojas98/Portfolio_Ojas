@@ -1,12 +1,11 @@
 .hero {
-    margin-top: 0rem;
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
     align-items: flex-start;
     gap: 1.5rem;
     justify-content: center;
-    min-height: 10vh;
+    min-height: 0vh;
+    
 
     &-title {
       color: var(--lightest-slate);

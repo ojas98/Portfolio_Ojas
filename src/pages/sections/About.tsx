@@ -74,7 +74,7 @@ const renderContent = (): ReactNode => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.6}}
       variants={{
         visible: { opacity: 1, y: -50 },
         hidden: { opacity: 0, y: 0 },
@@ -89,15 +89,21 @@ const renderContent = (): ReactNode => {
     <div className='about-grid-info'>
     <div className="about-grid">
         <div className="about-grid-info">
-          <p className="about-grid-info-text">
-{          `Greetings! I'm Ojas Balsotra, a dedicated Front-End Developer with a flair for data science. With over 2 years of hands-on experience in web development and 1 year in the captivating field of data science, I'm on a quest to fuse technology and data into compelling solutions.`
-}          </p>
-          <p className="about-grid-info-text">
+        <p className="about-grid-info-text">
+  {`Greetings!`}
+  <br />
+  <br />
+  {`I'm Ojas Balsotra, a versatile professional with 4 years of experience spanning front-end development, product management, data analysis, and business analysis.
+  In my career, I've spent over 2 years crafting engaging web solutions as a front-end developer and have driven projects to success in product management. My data analysis experience includes creating insightful dashboards and deriving actionable insights for BYJUS and WhiteHat Jr. Additionally, I've been involved in requirement gathering, a key aspect of business analysis.
+  I’m currently exploring new opportunities where I can leverage my diverse skill set to drive innovation and deliver impactful results. Let’s connect to discuss how I can contribute to your team and help achieve your goals.`}
+</p>
+
+          {/* <p className="about-grid-info-text">
           Fast-forward to today, my specialization lies in creating and delivering top-notch Learning solutions that not only meet the understanding of students but also consistently surpass their expectations at {" "}
             <Link href="https://byjus.com/us/math/" className="link" target="_blank">
             BYJUS.            
             </Link>
-          </p>
+          </p> */}
           <div className="section-buttons">
   <label className="radio">
     <input

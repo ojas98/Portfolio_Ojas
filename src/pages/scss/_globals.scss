@@ -1,12 +1,14 @@
 body{
     background-color: var(--background-color);
     background-attachment: fixed;
-    --lightest-navy: #112240;
-    --light-slate2: #ffcef86e;
-    --dark-slate: #495670;
-    --slate: #ffffff;
-    --light-slate: #fbb1f2;
+    --lightest-navy: #fdfdfd;
+    --light-slate2: #f49c7c;
+    --slate: #f9f9f9;
+    --light-slate: #ffffff;
     --lightest-slate: #000000;
+    --lightest-slate-navbar: #fdfdfd;
+    --outer-color: #f6f5f8;
+    --nav-responsive-color:#231e4f;
     --tsm: 13px;
     --tsm1: 14px;
     --tsm2: 15px;

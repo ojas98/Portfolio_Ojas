@@ -1,5 +1,5 @@
 .about {
-    margin: 15rem 0;
+  margin-top: 5rem;
     text-align: justify;
     font-family: var(--LeagueSpartan);
     .title {
@@ -118,19 +118,18 @@
         }
         
       }
-      /* Add this CSS for the section buttons */
 .section-buttons {
   display: flex;
   flex-wrap: wrap;
   font-family: var(--LeagueSpartan);
   border-radius: 1.5rem;
-  background-color: var(--light-slate2);
+  background-color: var(--outer-color);
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
   width: 300px;
   font-size: 14px;
-  margin: 0 auto 2rem; /* Add margin to separate from projects */
+  margin: 0 auto 2rem; 
 }
 
 .section-buttons .radio {
@@ -163,8 +162,8 @@
     
 
   
-  @media screen and (max-width: 1080px) {
-    margin: 5rem 0;
+  @media screen and (max-width: 1024px) {
+    margin-top: 5rem;
     &-grid {
       &-photo {
         .overlay {
@@ -184,7 +183,7 @@
     }
     
   }
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 768px) {
     margin: 5rem auto;
     .title {
       h2 {

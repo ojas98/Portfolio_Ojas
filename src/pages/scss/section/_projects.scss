@@ -1,5 +1,5 @@
 .projects {
-  margin: 10rem 0;
+  margin: 8rem 0;
   .title {
     font-family: var(--LeagueSpartan);
     color: var(--lightest-slate);
@@ -26,7 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 1.5rem;
-  background-color: var(--light-slate2);
+  background-color: var(--light-slate);
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
   padding: 0.25rem;
@@ -252,7 +252,8 @@
       /* Add any other styles you want */
     }
   }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1024px) {
+    margin: 8rem auto;
     &-container {
       align-items: center;
      gap: 5rem;
@@ -302,12 +303,15 @@
   }
   @media screen and (max-width: 600px) {
     &-container {
-     
+      display: flex;
+      align-items: center;
       .project {
         &-image {
           &-container {
             width: 350px;
             height: 200px;
+            
+            
           }
         }
         .project-info {
@@ -321,7 +325,7 @@
     .title {
       h2 {
         &::after {
-          width: 100px;
+          width: 150px;
         }
       }
     }
